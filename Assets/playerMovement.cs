@@ -10,12 +10,13 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private BoxCollider2D companionCol;
     private bool doubleJump;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), companionCol, true);
     }
 
     // Update is called once per frame
@@ -41,7 +42,7 @@ public class playerMovement : MonoBehaviour
     }
 
     private bool isGrounded() {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer);
     }
 
     private void Flip() {
