@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Companion
   - Coin
+  - Companion Avoid
   layers:
   - Default
   - TransparentFX
