@@ -20,6 +20,11 @@ public class goToLvl : MonoBehaviour
     }
     void OnMouseDown()
     {
-        SceneManager.LoadScene(lvlIndex);
+        //if (lvlTracker.lvlUnlock[lvlIndex-2])
+        {
+            Debug.Log("1");
+            SceneManager.LoadScene(lvlIndex);
+        }
+        
     }
 }
