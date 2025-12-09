@@ -10,6 +10,13 @@ public class companionMovement : MonoBehaviour
     [SerializeField] private bool following;
     [SerializeField] private Rigidbody2D rb;
 
+    private AStarGrid moveGrid;
+    private List openList;
+    private List closedList;
+    private List movementList;
+    private GridBlocks startingBlock;
+    private GridBlocks goalBlock;
+
     void Start()
     {
         following = true;
@@ -53,5 +60,31 @@ public class companionMovement : MonoBehaviour
             following = true;
         }
 
+    }
+
+    private void SetStartBlock() {
+        if (startingBlock != null) {
+            return;
+        }
+
+        foreach (GridBlocks start in moveGrid.blocks) {
+            Vector3 sphereUse = new Vector3(start.getX(), start.getY(), 0.0f);
+
+            Collider[] findStart = Physics.OverlapSphere(sphereUse, 1);
+
+            foreach (var objectCompare in findStart) {
+                if (objectCompare.tag == "Companion") {
+                    startingBlock = start;
+                }
+            }
+        }
+    }
+
+    private void SetGoalBlock() {
+        
+    }
+    
+    private void AStarFind() {
+        
     }
 }
