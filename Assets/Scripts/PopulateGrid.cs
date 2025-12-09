@@ -24,7 +24,7 @@ public class PopulateGrid : MonoBehaviour {
 		populateGrid();
 
 		if (blocks != null) {
-			grid = new AStarGrid(length, width, gridSize, blocks);
+			// Will Fix | grid = new AStarGrid(length, width, gridSize, blocks);
 		}
 	}
 
