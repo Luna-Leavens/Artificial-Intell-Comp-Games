@@ -5,9 +5,9 @@ using UnityEngine;
 public class PopulateGrid : MonoBehaviour {
 	[SerializeField] private int length;
 	[SerializeField] private int width;
-	[SerializeField] private int gridSize;
 	private GridBlocks[] blocks;
 	public AStarGrid grid;
+	public Grid useGrid;
 	private int row;
 	private int column;
 
@@ -18,13 +18,15 @@ public class PopulateGrid : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		row = width / gridSize;
-		column = length / gridSize;
+		int blockSize = (int) useGrid.cellSize.x;
+
+		row = width / blockSize;
+		column = length / blockSize;
 
 		populateGrid();
 
 		if (blocks != null) {
-			// Will Fix | grid = new AStarGrid(length, width, gridSize, blocks);
+			grid = new AStarGrid(length, width, useGrid, blocks);
 		}
 	}
 

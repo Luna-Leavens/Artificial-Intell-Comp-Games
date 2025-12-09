@@ -9,7 +9,7 @@ public class AStarGrid
     public Grid baseGrid; // Grid used for the AStarGrid
     public GridBlocks[] blocks; // Array of GridBlocks with all the coordinates and boolean values
 
-    public AStarGrid(int length, int width, int gridSize, Grid baseGrid, GridBlocks[] blocks)
+    public AStarGrid(int length, int width, Grid baseGrid, GridBlocks[] blocks)
     {
         if (length == 0 || width == 0 || gridSize == 0)
         {
@@ -21,7 +21,7 @@ public class AStarGrid
 
             this.width = width;
 
-            this.gridSize = gridSize;
+            this.gridSize = (int) baseGrid.cellSize.x;
             
             this.baseGrid = baseGrid;
 
