@@ -19,7 +19,7 @@ public class levelCompleted : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             lvlTracker.lvlUnlock[sceneIndex - 1] = true;
-            SceneManager.LoadScene("LevelSelect");
+            SceneManager.LoadScene("LevelCleared");
         }
     }
 }
