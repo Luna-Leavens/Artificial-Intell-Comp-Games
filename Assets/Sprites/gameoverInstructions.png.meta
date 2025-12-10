@@ -164,24 +164,6 @@ TextureImporter:
   - first:
       213: -4057673518503388891
     second: gameoverInstructions_53
-  - first:
-      213: 3471615243210503996
-    second: gameoverInstructions_54
-  - first:
-      213: -1961952539543011794
-    second: gameoverInstructions_55
-  - first:
-      213: -6158775309755009952
-    second: gameoverInstructions_56
-  - first:
-      213: -1383495512252837148
-    second: gameoverInstructions_57
-  - first:
-      213: -5799388002131295698
-    second: gameoverInstructions_58
-  - first:
-      213: -978807270210608323
-    second: gameoverInstructions_59
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -293,10 +275,10 @@ TextureImporter:
       name: gameoverInstructions_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 87
-        width: 54
-        height: 51
+        x: 184
+        y: 83
+        width: 55
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +297,10 @@ TextureImporter:
       name: gameoverInstructions_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 87
+        x: 248
+        y: 83
         width: 55
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +319,10 @@ TextureImporter:
       name: gameoverInstructions_2
       rect:
         serializedVersion: 2
-        x: 127
-        y: 87
+        x: 312
+        y: 83
         width: 56
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +341,10 @@ TextureImporter:
       name: gameoverInstructions_3
       rect:
         serializedVersion: 2
-        x: 191
-        y: 87
+        x: 376
+        y: 83
         width: 56
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +363,10 @@ TextureImporter:
       name: gameoverInstructions_4
       rect:
         serializedVersion: 2
-        x: 255
-        y: 87
+        x: 440
+        y: 83
         width: 56
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +385,10 @@ TextureImporter:
       name: gameoverInstructions_5
       rect:
         serializedVersion: 2
-        x: 372
-        y: 87
-        width: 56
-        height: 51
+        x: 557
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +407,10 @@ TextureImporter:
       name: gameoverInstructions_6
       rect:
         serializedVersion: 2
-        x: 436
-        y: 87
-        width: 56
-        height: 51
+        x: 621
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,10 +429,10 @@ TextureImporter:
       name: gameoverInstructions_7
       rect:
         serializedVersion: 2
-        x: 500
-        y: 87
-        width: 56
-        height: 51
+        x: 685
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,10 +451,10 @@ TextureImporter:
       name: gameoverInstructions_8
       rect:
         serializedVersion: 2
-        x: 564
-        y: 87
-        width: 56
-        height: 51
+        x: 749
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +473,10 @@ TextureImporter:
       name: gameoverInstructions_9
       rect:
         serializedVersion: 2
-        x: 628
-        y: 87
-        width: 56
-        height: 51
+        x: 813
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,10 +495,10 @@ TextureImporter:
       name: gameoverInstructions_10
       rect:
         serializedVersion: 2
-        x: 745
-        y: 87
-        width: 56
-        height: 51
+        x: 930
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -535,10 +517,10 @@ TextureImporter:
       name: gameoverInstructions_11
       rect:
         serializedVersion: 2
-        x: 810
-        y: 87
-        width: 55
-        height: 51
+        x: 995
+        y: 83
+        width: 56
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,10 +539,10 @@ TextureImporter:
       name: gameoverInstructions_12
       rect:
         serializedVersion: 2
-        x: 927
-        y: 87
-        width: 55
-        height: 51
+        x: 1112
+        y: 83
+        width: 56
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -579,10 +561,10 @@ TextureImporter:
       name: gameoverInstructions_13
       rect:
         serializedVersion: 2
-        x: 991
-        y: 87
-        width: 56
-        height: 51
+        x: 1176
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,10 +583,10 @@ TextureImporter:
       name: gameoverInstructions_14
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 87
-        width: 56
-        height: 51
+        x: 1240
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -623,10 +605,10 @@ TextureImporter:
       name: gameoverInstructions_15
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 87
-        width: 56
-        height: 51
+        x: 1304
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -645,10 +627,10 @@ TextureImporter:
       name: gameoverInstructions_16
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 87
-        width: 56
-        height: 51
+        x: 1368
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,10 +649,10 @@ TextureImporter:
       name: gameoverInstructions_17
       rect:
         serializedVersion: 2
-        x: 1247
-        y: 87
-        width: 56
-        height: 51
+        x: 1432
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -689,10 +671,10 @@ TextureImporter:
       name: gameoverInstructions_18
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 87
-        width: 56
-        height: 51
+        x: 1549
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -711,10 +693,10 @@ TextureImporter:
       name: gameoverInstructions_19
       rect:
         serializedVersion: 2
-        x: 1428
-        y: 87
-        width: 56
-        height: 51
+        x: 1613
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,10 +715,10 @@ TextureImporter:
       name: gameoverInstructions_20
       rect:
         serializedVersion: 2
-        x: 1545
-        y: 87
-        width: 56
-        height: 51
+        x: 1730
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -755,10 +737,10 @@ TextureImporter:
       name: gameoverInstructions_21
       rect:
         serializedVersion: 2
-        x: 1609
-        y: 87
-        width: 56
-        height: 51
+        x: 1794
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,10 +759,10 @@ TextureImporter:
       name: gameoverInstructions_22
       rect:
         serializedVersion: 2
-        x: 1674
-        y: 87
-        width: 55
-        height: 51
+        x: 1859
+        y: 83
+        width: 56
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -799,10 +781,10 @@ TextureImporter:
       name: gameoverInstructions_23
       rect:
         serializedVersion: 2
-        x: 1738
-        y: 87
-        width: 56
-        height: 51
+        x: 1919
+        y: 83
+        width: 61
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -821,10 +803,10 @@ TextureImporter:
       name: gameoverInstructions_24
       rect:
         serializedVersion: 2
-        x: 1802
-        y: 87
-        width: 56
-        height: 51
+        x: 1987
+        y: 83
+        width: 57
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -843,10 +825,10 @@ TextureImporter:
       name: gameoverInstructions_25
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 87
-        width: 56
-        height: 51
+        x: 2173
+        y: 0
+        width: 85
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -865,9 +847,9 @@ TextureImporter:
       name: gameoverInstructions_26
       rect:
         serializedVersion: 2
-        x: 1983
-        y: 87
-        width: 56
+        x: 0
+        y: 0
+        width: 54
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -887,9 +869,9 @@ TextureImporter:
       name: gameoverInstructions_27
       rect:
         serializedVersion: 2
-        x: 2047
-        y: 87
-        width: 56
+        x: 63
+        y: 0
+        width: 55
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -909,8 +891,8 @@ TextureImporter:
       name: gameoverInstructions_28
       rect:
         serializedVersion: 2
-        x: 2111
-        y: 87
+        x: 127
+        y: 0
         width: 56
         height: 51
       alignment: 0
@@ -931,8 +913,8 @@ TextureImporter:
       name: gameoverInstructions_29
       rect:
         serializedVersion: 2
-        x: 2175
-        y: 87
+        x: 191
+        y: 0
         width: 56
         height: 51
       alignment: 0
@@ -953,9 +935,9 @@ TextureImporter:
       name: gameoverInstructions_30
       rect:
         serializedVersion: 2
-        x: 2239
-        y: 87
-        width: 55
+        x: 255
+        y: 0
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -975,9 +957,9 @@ TextureImporter:
       name: gameoverInstructions_31
       rect:
         serializedVersion: 2
-        x: 0
+        x: 372
         y: 0
-        width: 54
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -997,9 +979,9 @@ TextureImporter:
       name: gameoverInstructions_32
       rect:
         serializedVersion: 2
-        x: 63
+        x: 436
         y: 0
-        width: 55
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1019,7 +1001,7 @@ TextureImporter:
       name: gameoverInstructions_33
       rect:
         serializedVersion: 2
-        x: 127
+        x: 500
         y: 0
         width: 56
         height: 51
@@ -1041,7 +1023,7 @@ TextureImporter:
       name: gameoverInstructions_34
       rect:
         serializedVersion: 2
-        x: 191
+        x: 564
         y: 0
         width: 56
         height: 51
@@ -1063,7 +1045,7 @@ TextureImporter:
       name: gameoverInstructions_35
       rect:
         serializedVersion: 2
-        x: 255
+        x: 628
         y: 0
         width: 56
         height: 51
@@ -1085,9 +1067,9 @@ TextureImporter:
       name: gameoverInstructions_36
       rect:
         serializedVersion: 2
-        x: 372
+        x: 693
         y: 0
-        width: 56
+        width: 55
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1107,9 +1089,9 @@ TextureImporter:
       name: gameoverInstructions_37
       rect:
         serializedVersion: 2
-        x: 436
+        x: 810
         y: 0
-        width: 56
+        width: 55
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1129,7 +1111,7 @@ TextureImporter:
       name: gameoverInstructions_38
       rect:
         serializedVersion: 2
-        x: 500
+        x: 874
         y: 0
         width: 56
         height: 51
@@ -1151,7 +1133,7 @@ TextureImporter:
       name: gameoverInstructions_39
       rect:
         serializedVersion: 2
-        x: 564
+        x: 991
         y: 0
         width: 56
         height: 51
@@ -1173,7 +1155,7 @@ TextureImporter:
       name: gameoverInstructions_40
       rect:
         serializedVersion: 2
-        x: 628
+        x: 1055
         y: 0
         width: 56
         height: 51
@@ -1195,9 +1177,9 @@ TextureImporter:
       name: gameoverInstructions_41
       rect:
         serializedVersion: 2
-        x: 693
+        x: 1119
         y: 0
-        width: 55
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1217,9 +1199,9 @@ TextureImporter:
       name: gameoverInstructions_42
       rect:
         serializedVersion: 2
-        x: 810
+        x: 1183
         y: 0
-        width: 55
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1239,7 +1221,7 @@ TextureImporter:
       name: gameoverInstructions_43
       rect:
         serializedVersion: 2
-        x: 874
+        x: 1247
         y: 0
         width: 56
         height: 51
@@ -1261,7 +1243,7 @@ TextureImporter:
       name: gameoverInstructions_44
       rect:
         serializedVersion: 2
-        x: 991
+        x: 1311
         y: 0
         width: 56
         height: 51
@@ -1283,7 +1265,7 @@ TextureImporter:
       name: gameoverInstructions_45
       rect:
         serializedVersion: 2
-        x: 1055
+        x: 1428
         y: 0
         width: 56
         height: 51
@@ -1305,7 +1287,7 @@ TextureImporter:
       name: gameoverInstructions_46
       rect:
         serializedVersion: 2
-        x: 1119
+        x: 1492
         y: 0
         width: 56
         height: 51
@@ -1327,9 +1309,9 @@ TextureImporter:
       name: gameoverInstructions_47
       rect:
         serializedVersion: 2
-        x: 1183
+        x: 1609
         y: 0
-        width: 56
+        width: 87
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1349,7 +1331,7 @@ TextureImporter:
       name: gameoverInstructions_48
       rect:
         serializedVersion: 2
-        x: 1247
+        x: 1704
         y: 0
         width: 56
         height: 51
@@ -1371,7 +1353,7 @@ TextureImporter:
       name: gameoverInstructions_49
       rect:
         serializedVersion: 2
-        x: 1311
+        x: 1768
         y: 0
         width: 56
         height: 51
@@ -1393,7 +1375,7 @@ TextureImporter:
       name: gameoverInstructions_50
       rect:
         serializedVersion: 2
-        x: 1428
+        x: 1832
         y: 0
         width: 56
         height: 51
@@ -1415,9 +1397,9 @@ TextureImporter:
       name: gameoverInstructions_51
       rect:
         serializedVersion: 2
-        x: 1492
+        x: 1949
         y: 0
-        width: 56
+        width: 87
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1437,9 +1419,9 @@ TextureImporter:
       name: gameoverInstructions_52
       rect:
         serializedVersion: 2
-        x: 1609
+        x: 2044
         y: 0
-        width: 87
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1459,7 +1441,7 @@ TextureImporter:
       name: gameoverInstructions_53
       rect:
         serializedVersion: 2
-        x: 1704
+        x: 2108
         y: 0
         width: 56
         height: 51
@@ -1473,138 +1455,6 @@ TextureImporter:
       bones: []
       spriteID: 5299813fe6f30b7c0800000000000000
       internalID: -4057673518503388891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_54
-      rect:
-        serializedVersion: 2
-        x: 1768
-        y: 0
-        width: 56
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c37b4689ba7ad2030800000000000000
-      internalID: 3471615243210503996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_55
-      rect:
-        serializedVersion: 2
-        x: 1832
-        y: 0
-        width: 56
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2efc566f8eb5c4e0800000000000000
-      internalID: -1961952539543011794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_56
-      rect:
-        serializedVersion: 2
-        x: 1949
-        y: 0
-        width: 87
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0643b928c72a78aa0800000000000000
-      internalID: -6158775309755009952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_57
-      rect:
-        serializedVersion: 2
-        x: 2044
-        y: 0
-        width: 56
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e292d36926dccce0800000000000000
-      internalID: -1383495512252837148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_58
-      rect:
-        serializedVersion: 2
-        x: 2108
-        y: 0
-        width: 56
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e224d4aa65f648fa0800000000000000
-      internalID: -5799388002131295698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameoverInstructions_59
-      rect:
-        serializedVersion: 2
-        x: 2173
-        y: 0
-        width: 55
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d33e68349f39a62f0800000000000000
-      internalID: -978807270210608323
       vertices: []
       indices: 
       edges: []
@@ -1673,12 +1523,6 @@ TextureImporter:
       gameoverInstructions_51: -1870035915234782705
       gameoverInstructions_52: -5394221745597839595
       gameoverInstructions_53: -4057673518503388891
-      gameoverInstructions_54: 3471615243210503996
-      gameoverInstructions_55: -1961952539543011794
-      gameoverInstructions_56: -6158775309755009952
-      gameoverInstructions_57: -1383495512252837148
-      gameoverInstructions_58: -5799388002131295698
-      gameoverInstructions_59: -978807270210608323
       gameoverInstructions_6: -4012897952280732427
       gameoverInstructions_7: -1983756365622077669
       gameoverInstructions_8: -2782076183442496507

@@ -20,9 +20,8 @@ public class goToLvl : MonoBehaviour
     }
     void OnMouseDown()
     {
-        //if (lvlTracker.lvlUnlock[lvlIndex-2])
+        if (lvlTracker.lvlUnlock[lvlIndex-2])
         {
-            Debug.Log("1");
             lvlTracker.curLvlIndex = lvlIndex;
             SceneManager.LoadScene(lvlIndex);
         }
