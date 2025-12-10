@@ -2,28 +2,17 @@ using UnityEngine;
 
 public class unlock : MonoBehaviour
 {
-    [SerializeField] private pressButton triggercheck;
-    [SerializeField] private BoxCollider2D col;
-    
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private keyCollect keyCount;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (triggercheck.trigger)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            col.enabled = false;
-            spriteRenderer.enabled = false;
-        } else
-        {
-            
-            col.enabled = true;
-            spriteRenderer.enabled = true;
+            if(keyCount.keysCollected >= 1)
+            {
+                keyCount.keysCollected--;
+                Destroy(gameObject);
+            }
         }
     }
 }

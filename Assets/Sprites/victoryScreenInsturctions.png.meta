@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 29bacb53a78506347abf8261c7bd8d48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5365654288654673961
+    second: victoryScreenInsturctions_0
+  - first:
+      213: 936348456029429032
+    second: victoryScreenInsturctions_1
+  - first:
+      213: -1900368427812244707
+    second: victoryScreenInsturctions_2
+  - first:
+      213: -1914332300275025140
+    second: victoryScreenInsturctions_3
+  - first:
+      213: 8736730386426579567
+    second: victoryScreenInsturctions_4
+  - first:
+      213: 4585664782858334445
+    second: victoryScreenInsturctions_5
+  - first:
+      213: -2731776083345757881
+    second: victoryScreenInsturctions_6
+  - first:
+      213: 8943527134362480818
+    second: victoryScreenInsturctions_7
+  - first:
+      213: -2034929228656595672
+    second: victoryScreenInsturctions_8
+  - first:
+      213: -4645253581624618870
+    second: victoryScreenInsturctions_9
+  - first:
+      213: -7681050881875208758
+    second: victoryScreenInsturctions_10
+  - first:
+      213: -5357218081311411224
+    second: victoryScreenInsturctions_11
+  - first:
+      213: 2430149199826262239
+    second: victoryScreenInsturctions_12
+  - first:
+      213: 9144520866588918997
+    second: victoryScreenInsturctions_13
+  - first:
+      213: -1381885532413007336
+    second: victoryScreenInsturctions_14
+  - first:
+      213: -3965553149399925355
+    second: victoryScreenInsturctions_15
+  - first:
+      213: 6071612309455445771
+    second: victoryScreenInsturctions_16
+  - first:
+      213: 1822167537412401254
+    second: victoryScreenInsturctions_17
+  - first:
+      213: 2139406890580011858
+    second: victoryScreenInsturctions_18
+  - first:
+      213: -3480395264556687919
+    second: victoryScreenInsturctions_19
+  - first:
+      213: -5782455686106777588
+    second: victoryScreenInsturctions_20
+  - first:
+      213: -5005617621129389858
+    second: victoryScreenInsturctions_21
+  - first:
+      213: 1293229990393329910
+    second: victoryScreenInsturctions_22
+  - first:
+      213: -2574372778559130877
+    second: victoryScreenInsturctions_23
+  - first:
+      213: -2783258799828617001
+    second: victoryScreenInsturctions_24
+  - first:
+      213: -6502494503359261225
+    second: victoryScreenInsturctions_25
+  - first:
+      213: -5897704157835794042
+    second: victoryScreenInsturctions_26
+  - first:
+      213: 5909569879121228277
+    second: victoryScreenInsturctions_27
+  - first:
+      213: -7141210176141932808
+    second: victoryScreenInsturctions_28
+  - first:
+      213: -7282580829497563584
+    second: victoryScreenInsturctions_29
+  - first:
+      213: -1196193862157703598
+    second: victoryScreenInsturctions_30
+  - first:
+      213: -3319612492046459573
+    second: victoryScreenInsturctions_31
+  - first:
+      213: -4709464590313394956
+    second: victoryScreenInsturctions_32
+  - first:
+      213: -2837678149347172818
+    second: victoryScreenInsturctions_33
+  - first:
+      213: 8656619498447172411
+    second: victoryScreenInsturctions_34
+  - first:
+      213: 3262337766934906388
+    second: victoryScreenInsturctions_35
+  - first:
+      213: 7612205731108343131
+    second: victoryScreenInsturctions_36
+  - first:
+      213: -8977757788152030428
+    second: victoryScreenInsturctions_37
+  - first:
+      213: 4469193881529825276
+    second: victoryScreenInsturctions_38
+  - first:
+      213: -2766070405456378944
+    second: victoryScreenInsturctions_39
+  - first:
+      213: 6151039385689716142
+    second: victoryScreenInsturctions_40
+  - first:
+      213: -1329494817254950892
+    second: victoryScreenInsturctions_41
+  - first:
+      213: 2022412413620600809
+    second: victoryScreenInsturctions_42
+  - first:
+      213: -4997086924598487305
+    second: victoryScreenInsturctions_43
+  - first:
+      213: 71906115211972274
+    second: victoryScreenInsturctions_44
+  - first:
+      213: -2980324054912765981
+    second: victoryScreenInsturctions_45
+  - first:
+      213: 6579293289131454334
+    second: victoryScreenInsturctions_46
+  - first:
+      213: 1732006957921804529
+    second: victoryScreenInsturctions_47
+  - first:
+      213: -1667791100102502593
+    second: victoryScreenInsturctions_48
+  - first:
+      213: -8441930862641935856
+    second: victoryScreenInsturctions_49
+  - first:
+      213: 1456472592694645362
+    second: victoryScreenInsturctions_50
+  - first:
+      213: -1213593355844746359
+    second: victoryScreenInsturctions_51
+  - first:
+      213: -6913247328211791083
+    second: victoryScreenInsturctions_52
+  - first:
+      213: 5493219794595889216
+    second: victoryScreenInsturctions_53
+  - first:
+      213: 8750343001794733984
+    second: victoryScreenInsturctions_54
+  - first:
+      213: -8143359417775567736
+    second: victoryScreenInsturctions_55
+  - first:
+      213: -4751681905302796822
+    second: victoryScreenInsturctions_56
+  - first:
+      213: -1964822400135180441
+    second: victoryScreenInsturctions_57
+  - first:
+      213: 8023235733197605292
+    second: victoryScreenInsturctions_58
+  - first:
+      213: -24112827609591712
+    second: victoryScreenInsturctions_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7df295add5985b0800000000000000
+      internalID: -5365654288654673961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 87
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d9e93b5f39efc00800000000000000
+      internalID: 936348456029429032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1332e5cbf880a5e0800000000000000
+      internalID: -1900368427812244707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bfc0c5aecee65e0800000000000000
+      internalID: -1914332300275025140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a415d4ff91f3970800000000000000
+      internalID: 8736730386426579567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_5
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de03a49f2dd83af30800000000000000
+      internalID: 4585664782858334445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749a4423028c61ad0800000000000000
+      internalID: -2731776083345757881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b03eba3b8acd1c70800000000000000
+      internalID: 8943527134362480818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_8
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d2dd6e5aa72c3e0800000000000000
+      internalID: -2034929228656595672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_9
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8057a7aa7eb88fb0800000000000000
+      internalID: -4645253581624618870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_10
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5902c3bec676590800000000000000
+      internalID: -7681050881875208758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_11
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 87
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3322fe98657a5b0800000000000000
+      internalID: -5357218081311411224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_12
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 87
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd818de52df99b120800000000000000
+      internalID: 2430149199826262239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_13
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d40e26474dd7ee70800000000000000
+      internalID: 9144520866588918997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_14
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a65480e6e82dce0800000000000000
+      internalID: -1381885532413007336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_15
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59df518cb6687f8c0800000000000000
+      internalID: -3965553149399925355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_16
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f1bf60a33b24450800000000000000
+      internalID: 6071612309455445771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_17
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668e6b498b3a94910800000000000000
+      internalID: 1822167537412401254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_18
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b6b0f5b33b0bd10800000000000000
+      internalID: 2139406890580011858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_19
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd952262f623bfc0800000000000000
+      internalID: -3480395264556687919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_20
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08fa24b03790cfa0800000000000000
+      internalID: -5782455686106777588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_21
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed895236b49788ab0800000000000000
+      internalID: -5005617621129389858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_22
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 87
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8b64e03d972f110800000000000000
+      internalID: 1293229990393329910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_23
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3033c86f89df54cd0800000000000000
+      internalID: -2574372778559130877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_24
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d83c3e2ed0ef59d0800000000000000
+      internalID: -2783258799828617001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_25
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5575d63bf72c5a0800000000000000
+      internalID: -6502494503359261225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_26
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6896ad9d055272ea0800000000000000
+      internalID: -5897704157835794042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_27
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f17e5cae72030250800000000000000
+      internalID: 5909569879121228277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_28
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6c7a83e2355ec90800000000000000
+      internalID: -7141210176141932808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_29
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 87
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0466ab102531fea90800000000000000
+      internalID: -7282580829497563584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_30
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 87
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25666932504466fe0800000000000000
+      internalID: -1196193862157703598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d1f9bc60e5ee1d0800000000000000
+      internalID: -3319612492046459573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_32
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fce61c28ee94aeb0800000000000000
+      internalID: -4709464590313394956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_33
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e164102ca8e98d0800000000000000
+      internalID: -2837678149347172818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_34
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33f9a0b19d722870800000000000000
+      internalID: 8656619498447172411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4160f771ae6264d20800000000000000
+      internalID: 3262337766934906388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_36
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dc7eff7ccf3a960800000000000000
+      internalID: 7612205731108343131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_37
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b93bd9bd8986380800000000000000
+      internalID: -8977757788152030428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_38
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf73fec0824c50e30800000000000000
+      internalID: 4469193881529825276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_39
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c34d0b1f91fc99d0800000000000000
+      internalID: -2766070405456378944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_40
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5f87f4bb1ec5550800000000000000
+      internalID: 6151039385689716142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_41
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418bbc6f18fac8de0800000000000000
+      internalID: -1329494817254950892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_42
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef323fff5d011c10800000000000000
+      internalID: 2022412413620600809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_43
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6de83fae7c6aab0800000000000000
+      internalID: -4997086924598487305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_44
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be43661b367ff000800000000000000
+      internalID: 71906115211972274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_45
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef6f5fff03c3a6d0800000000000000
+      internalID: -2980324054912765981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_46
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7faacb43685e4b50800000000000000
+      internalID: 6579293289131454334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_47
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f02f63d623590810800000000000000
+      internalID: 1732006957921804529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_48
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3715dea4d0dad8e0800000000000000
+      internalID: -1667791100102502593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_49
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a02d19b9c38da80800000000000000
+      internalID: -8441930862641935856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_50
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27218a83b1e663410800000000000000
+      internalID: 1456472592694645362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_51
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9838913d543782fe0800000000000000
+      internalID: -1213593355844746359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_52
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 0
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5139485de263f00a0800000000000000
+      internalID: -6913247328211791083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_53
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04048028c46db3c40800000000000000
+      internalID: 5493219794595889216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_54
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7eccc49967f6970800000000000000
+      internalID: 8750343001794733984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_55
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cc72141c9fcfe80800000000000000
+      internalID: -8143359417775567736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_56
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 0
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae586cc8b72ae0eb0800000000000000
+      internalID: -4751681905302796822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_57
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f4639ef6c8bb4e0800000000000000
+      internalID: -1964822400135180441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_58
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9c672f362485f60800000000000000
+      internalID: 8023235733197605292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoryScreenInsturctions_59
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 0
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060dcc3d2855aaff0800000000000000
+      internalID: -24112827609591712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      victoryScreenInsturctions_0: -5365654288654673961
+      victoryScreenInsturctions_1: 936348456029429032
+      victoryScreenInsturctions_10: -7681050881875208758
+      victoryScreenInsturctions_11: -5357218081311411224
+      victoryScreenInsturctions_12: 2430149199826262239
+      victoryScreenInsturctions_13: 9144520866588918997
+      victoryScreenInsturctions_14: -1381885532413007336
+      victoryScreenInsturctions_15: -3965553149399925355
+      victoryScreenInsturctions_16: 6071612309455445771
+      victoryScreenInsturctions_17: 1822167537412401254
+      victoryScreenInsturctions_18: 2139406890580011858
+      victoryScreenInsturctions_19: -3480395264556687919
+      victoryScreenInsturctions_2: -1900368427812244707
+      victoryScreenInsturctions_20: -5782455686106777588
+      victoryScreenInsturctions_21: -5005617621129389858
+      victoryScreenInsturctions_22: 1293229990393329910
+      victoryScreenInsturctions_23: -2574372778559130877
+      victoryScreenInsturctions_24: -2783258799828617001
+      victoryScreenInsturctions_25: -6502494503359261225
+      victoryScreenInsturctions_26: -5897704157835794042
+      victoryScreenInsturctions_27: 5909569879121228277
+      victoryScreenInsturctions_28: -7141210176141932808
+      victoryScreenInsturctions_29: -7282580829497563584
+      victoryScreenInsturctions_3: -1914332300275025140
+      victoryScreenInsturctions_30: -1196193862157703598
+      victoryScreenInsturctions_31: -3319612492046459573
+      victoryScreenInsturctions_32: -4709464590313394956
+      victoryScreenInsturctions_33: -2837678149347172818
+      victoryScreenInsturctions_34: 8656619498447172411
+      victoryScreenInsturctions_35: 3262337766934906388
+      victoryScreenInsturctions_36: 7612205731108343131
+      victoryScreenInsturctions_37: -8977757788152030428
+      victoryScreenInsturctions_38: 4469193881529825276
+      victoryScreenInsturctions_39: -2766070405456378944
+      victoryScreenInsturctions_4: 8736730386426579567
+      victoryScreenInsturctions_40: 6151039385689716142
+      victoryScreenInsturctions_41: -1329494817254950892
+      victoryScreenInsturctions_42: 2022412413620600809
+      victoryScreenInsturctions_43: -4997086924598487305
+      victoryScreenInsturctions_44: 71906115211972274
+      victoryScreenInsturctions_45: -2980324054912765981
+      victoryScreenInsturctions_46: 6579293289131454334
+      victoryScreenInsturctions_47: 1732006957921804529
+      victoryScreenInsturctions_48: -1667791100102502593
+      victoryScreenInsturctions_49: -8441930862641935856
+      victoryScreenInsturctions_5: 4585664782858334445
+      victoryScreenInsturctions_50: 1456472592694645362
+      victoryScreenInsturctions_51: -1213593355844746359
+      victoryScreenInsturctions_52: -6913247328211791083
+      victoryScreenInsturctions_53: 5493219794595889216
+      victoryScreenInsturctions_54: 8750343001794733984
+      victoryScreenInsturctions_55: -8143359417775567736
+      victoryScreenInsturctions_56: -4751681905302796822
+      victoryScreenInsturctions_57: -1964822400135180441
+      victoryScreenInsturctions_58: 8023235733197605292
+      victoryScreenInsturctions_59: -24112827609591712
+      victoryScreenInsturctions_6: -2731776083345757881
+      victoryScreenInsturctions_7: 8943527134362480818
+      victoryScreenInsturctions_8: -2034929228656595672
+      victoryScreenInsturctions_9: -4645253581624618870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
