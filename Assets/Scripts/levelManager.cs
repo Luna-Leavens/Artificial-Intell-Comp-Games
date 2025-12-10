@@ -22,7 +22,7 @@ public class levelManager : MonoBehaviour
 
         if (lvlManagerInstance == null) {
 		    lvlManagerInstance = this;
-            lvlUnlock = new bool[5]; // increase as we add more levels
+            lvlUnlock = new bool[12]; // increase as we add more levels
             lvlUnlock[0] = true;
 	    } else {
 		    DestroyObject(gameObject);
