@@ -83,62 +83,55 @@ public class AStarGrid
         }
     }
 
-    public GridBlocks getNeighbor(GridBlocks block, string direction)
+    public GridBlocks getNeighbor(GridBlocks block, int direction)
     {
-        if (direction == "up")
-        {
-            if (block.row >= 0 && block.row < width / gridSize)
-            {
-                foreach (GridBlocks neighbor in blocks)
-                {
-                    if (neighbor.row == block.row - 1 && neighbor.column == block.column && !neighbor.obstacle)
-                    {
+        switch (direction) {
+            case 0:  // Up
+                if (block.row >= 0 && block.row < width / gridSize) {
+                foreach (GridBlocks neighbor in blocks) {
+                    if (neighbor.row == block.row - 1 && neighbor.column == block.column && !neighbor.obstacle) {
                         return neighbor;
                     }
                 }
             }
-        }
 
-        if (direction == "left")
-        {
-            if (block.column >= 0 && block.column < length / gridSize)
-            {
-                foreach (GridBlocks neighbor in blocks)
-                {
-                    if (neighbor.row == block.row && neighbor.column == block.column - 1 && !neighbor.obstacle)
-                    {
-                        return neighbor;
-                    }
-                }
-            }
-        }
+            break;
 
-        if (direction == "down")
-        {
-            if (block.row >= 0 && block.row < width / gridSize)
-            {
-                foreach (GridBlocks neighbor in blocks)
-                {
-                    if (neighbor.row == block.row + 1 && neighbor.column == block.column && !neighbor.obstacle)
-                    {
+            case 1:  // Left
+                if (block.column >= 0 && block.column < length / gridSize) {
+                foreach (GridBlocks neighbor in blocks) {
+                    if (neighbor.row == block.row && neighbor.column == block.column - 1 && !neighbor.obstacle) {
                         return neighbor;
                     }
                 }
             }
-        }
 
-        if (direction == "right")
-        {
-            if (block.column >= 0 && block.column < length / gridSize)
-            {
-                foreach (GridBlocks neighbor in blocks)
-                {
-                    if (neighbor.row == block.row && neighbor.column == block.column + 1 && !neighbor.obstacle)
-                    {
+            break;
+
+            case 2:  // Down
+                if (block.row >= 0 && block.row < width / gridSize) {
+                foreach (GridBlocks neighbor in blocks) {
+                    if (neighbor.row == block.row + 1 && neighbor.column == block.column && !neighbor.obstacle) {
                         return neighbor;
                     }
                 }
             }
+
+            break;
+
+            case 3:  // Right
+                if (block.column >= 0 && block.column < length / gridSize) {
+                foreach (GridBlocks neighbor in blocks) {
+                    if (neighbor.row == block.row && neighbor.column == block.column + 1 && !neighbor.obstacle) {
+                        return neighbor;
+                    }
+                }
+            }
+
+            break;
+
+            default:
+            break;
         }
 
         return block;
