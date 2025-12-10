@@ -7,6 +7,7 @@ TagManager:
   - Companion
   - Coin
   - Companion Avoid
+  - Key
   layers:
   - Default
   - TransparentFX
