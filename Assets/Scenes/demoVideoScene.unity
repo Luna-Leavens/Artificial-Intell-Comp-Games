@@ -2169,7 +2169,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1209972721
 SpriteRenderer:
@@ -2473,9 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae85db20e87cb44b99936794a1ed880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggercheck: {fileID: 1904831274}
-  col: {fileID: 1630398439}
-  spriteRenderer: {fileID: 1630398440}
+  keyCount: {fileID: 0}
 --- !u!61 &1630398439
 BoxCollider2D:
   m_ObjectHideFlags: 0
