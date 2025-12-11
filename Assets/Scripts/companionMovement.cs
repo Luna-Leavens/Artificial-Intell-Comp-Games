@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Vector2 = UnityEngine.Vector2;
@@ -16,6 +17,7 @@ public class companionMovement : MonoBehaviour
     [SerializeField] private int gridLength;
 	[SerializeField] private int gridWidth;
     [SerializeField] private Grid useGrid;
+    [SerializeField] private Tilemap tiles;
     private bool landed;
     private bool following;
     private AStarGrid moveGrid;
@@ -33,6 +35,7 @@ public class companionMovement : MonoBehaviour
         following = true;
         landed = false;
         Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), playerCol, true);
+        movementList = new List();
 
         // Populates Grid Once
 
@@ -79,6 +82,8 @@ public class companionMovement : MonoBehaviour
         {
             
             waypoint = Input.mousePosition;
+            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
+            waypoint = worldPosition;
 
             /*
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
@@ -100,10 +105,12 @@ public class companionMovement : MonoBehaviour
     }
 
     private void SetStartBlock() {
+        
         for (int i = 0; i < moveGrid.blocks.Length; i++) {
             Vector2 sphereUse = new Vector2(moveGrid.blocks[i].getX(), moveGrid.blocks[i].getY());
+            Vector2 size = new Vector2(0.3f, 0.3f);
 
-            Collider2D findStart = Physics2D.OverlapCircle(sphereUse, 0.5f);
+            Collider2D findStart = Physics2D.OverlapBox(sphereUse, size, 0.0f);
 
             if (findStart != null) {
                 if (findStart.gameObject.tag == "Companion") {
@@ -113,7 +120,7 @@ public class companionMovement : MonoBehaviour
         }
     }
 
-    private void SetGoalBlock(Vector3 goal) {
+    private void SetGoalBlock(Vector2 goal) {
         foreach (GridBlocks goalFind in gridBlocks) {
             float compareX = goalFind.getX() / goal.x;
             float compareY = goalFind.getY() / goal.y;
@@ -124,13 +131,16 @@ public class companionMovement : MonoBehaviour
         }
     }
     
-    private void AStarFind(Vector3 pos) {
+    private void AStarFind(Vector2 pos) {
         SetStartBlock();
         SetGoalBlock(pos);
 
         GridBlocks current;
         GridBlocks parentSet;
         GridBlocks currentNeighbor;
+
+        openList = new List();
+        closedList = new List();
 
         // Sets details for starting block before main AStar loop
 
@@ -149,6 +159,9 @@ public class companionMovement : MonoBehaviour
 
         current = openList.pop();
 
+        Debug.Log(current.row);
+        Debug.Log(current.column);
+
         while (current.row != goalBlock.row && current.column != goalBlock.column) {
             if (current != startingBlock) {
                 current = openList.pop();
@@ -164,6 +177,9 @@ public class companionMovement : MonoBehaviour
                 bool flag = false;
 
                 currentNeighbor = moveGrid.getNeighbor(current, i);
+
+                Debug.Log(currentNeighbor.row);
+                Debug.Log(currentNeighbor.column);
 
                 foreach (GridBlocks closed in closedList.list) {
                     if (currentNeighbor.row == closed.row && currentNeighbor.column == closed.column || currentNeighbor.obstacle == true) {
@@ -208,8 +224,9 @@ public class companionMovement : MonoBehaviour
     }
 
     void populateGrid (int blockSize) {
-		float startingX = gridLength / 2 * -1;
-		float startingY = gridWidth / 2 * -1; 
+
+		float startingX = tiles.origin.x + 0.5f;
+		float startingY = tiles.origin.y + 0.5f;
 		int arrayIt = 0;
 
 		for (int i = 0; i < gridRow; i++) {
@@ -218,8 +235,9 @@ public class companionMovement : MonoBehaviour
                 float saveY = startingY + (blockSize * i);
 
                 Vector2 findOtherObjects = new Vector2(saveX, saveY);
+                Vector2 size = new Vector2(0.2f, 0.2f);
 
-                Collider2D test = Physics2D.OverlapCircle(findOtherObjects, 0.5f);
+                Collider2D test = Physics2D.OverlapBox(findOtherObjects, size, 0.0f);
 
                 if (test != null) {
 
@@ -238,6 +256,14 @@ public class companionMovement : MonoBehaviour
 
 					    arrayIt++;
 				    }
+                }
+
+                else {
+                    GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
+
+					    gridBlocks[arrayIt] = input;
+
+					    arrayIt++;
                 }
 			}
 		}

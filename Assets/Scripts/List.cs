@@ -7,7 +7,9 @@ public class List
     private int i = 0;
 
     public List()
-    {}
+    {
+        list = new GridBlocks[10000];
+    }
 
     // Adds block to the start of the list
     public void push(GridBlocks current)
@@ -40,15 +42,15 @@ public class List
     // Returns the length of the list
     public int length()
     {
-        return i + 1;
+        return i;
     }
 
     // Removes top block on the list
     public GridBlocks pop()
     {
-        GridBlocks popped = list[i];
+        GridBlocks popped = list[i-1];
 
-        list[i] = null;
+        list[i-1] = null;
 
         i--;
 
