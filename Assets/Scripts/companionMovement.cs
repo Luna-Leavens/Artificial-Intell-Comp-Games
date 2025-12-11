@@ -40,6 +40,7 @@ public class companionMovement : MonoBehaviour
 
 		gridRow = gridWidth / blockSize;
 		gridColumn = gridLength / blockSize;
+        gridBlocks = new GridBlocks[gridRow * gridColumn];
 
 		populateGrid(blockSize);
 
@@ -99,21 +100,21 @@ public class companionMovement : MonoBehaviour
     }
 
     private void SetStartBlock() {
-        foreach (GridBlocks start in moveGrid.blocks) {
-            Vector3 sphereUse = new Vector3(start.getX(), start.getY(), 0.0f);
+        for (int i = 0; i < moveGrid.blocks.Length; i++) {
+            Vector2 sphereUse = new Vector2(moveGrid.blocks[i].getX(), moveGrid.blocks[i].getY());
 
-            Collider[] findStart = Physics.OverlapSphere(sphereUse, 1);
+            Collider2D findStart = Physics2D.OverlapCircle(sphereUse, 0.5f);
 
-            foreach (var objectCompare in findStart) {
-                if (objectCompare.tag == "Companion") {
-                    startingBlock = start;
+            if (findStart != null) {
+                if (findStart.gameObject.tag == "Companion") {
+                    startingBlock = moveGrid.blocks[i];
                 }
             }
         }
     }
 
     private void SetGoalBlock(Vector3 goal) {
-        foreach (GridBlocks goalFind in moveGrid.blocks) {
+        foreach (GridBlocks goalFind in gridBlocks) {
             float compareX = goalFind.getX() / goal.x;
             float compareY = goalFind.getY() / goal.y;
             
@@ -210,16 +211,13 @@ public class companionMovement : MonoBehaviour
 		float startingX = gridLength / 2 * -1;
 		float startingY = gridWidth / 2 * -1; 
 		int arrayIt = 0;
-        gridBlocks = new GridBlocks[gridLength * gridWidth];
 
 		for (int i = 0; i < gridRow; i++) {
 			for (int j = 0; j < gridColumn; j++) {
-				int currentX = (int) startingX + (blockSize * j);
-				int currentY = (int) startingY + (blockSize * i);
                 float saveX = startingX + (blockSize * j);
                 float saveY = startingY + (blockSize * i);
 
-                Vector2 findOtherObjects = new Vector2(currentX, currentY);
+                Vector2 findOtherObjects = new Vector2(saveX, saveY);
 
                 Collider2D test = Physics2D.OverlapCircle(findOtherObjects, 0.5f);
 

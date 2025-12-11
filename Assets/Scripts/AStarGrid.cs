@@ -11,7 +11,7 @@ public class AStarGrid
 
     public AStarGrid(int length, int width, Grid baseGrid, GridBlocks[] blocks)
     {
-        if (length == 0 || width == 0 || gridSize == 0)
+        if (length == 0 || width == 0)
         {
             Console.WriteLine("Invalid Numbers");
         }
@@ -27,19 +27,6 @@ public class AStarGrid
 
             this.blocks = blocks;
         }
-    }
-
-    public bool getBlockAt(int row, int column)
-    {
-        foreach (GridBlocks returnBlocks in blocks)
-        {
-            if (returnBlocks.row == row && returnBlocks.column == column)
-            {
-                return returnBlocks.obstacle;
-            }
-        }
-
-        return false;
     }
 
     public float getX(int row, int column) 
