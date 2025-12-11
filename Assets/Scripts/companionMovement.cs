@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -10,28 +12,52 @@ public class companionMovement : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private BoxCollider2D playerCol;
-    [SerializeField] private bool landed;
-    [SerializeField] private bool following;
     [SerializeField] private Rigidbody2D rb;
-
+    [SerializeField] private int gridLength;
+	[SerializeField] private int gridWidth;
+    [SerializeField] private Grid useGrid;
+    private bool landed;
+    private bool following;
     private AStarGrid moveGrid;
     private List openList;
     private List closedList;
     private List movementList;
     private GridBlocks startingBlock;
     private GridBlocks goalBlock;
+    private GridBlocks[] gridBlocks;
+	private int gridRow;
+	private int gridColumn;
 
     void Start()
     {
         following = true;
         landed = false;
         Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), playerCol, true);
+
+        // Populates Grid Once
+
+        int blockSize = (int) useGrid.cellSize.x;
+
+		gridRow = gridWidth / blockSize;
+		gridColumn = gridLength / blockSize;
+
+		populateGrid(blockSize);
+
+		if (gridBlocks != null) {
+			moveGrid = new AStarGrid(gridLength, gridWidth, useGrid, gridBlocks);
+		}
     }
     void Update()
     {
         if (!following && !landed)
         {
-            transform.position = Vector3.MoveTowards(transform.position, waypoint, 4.5f * Time.deltaTime);
+            // transform.position = Vector3.MoveTowards(transform.position, waypoint, 4.5f * Time.deltaTime);
+
+            GridBlocks currentMove = movementList.pop();
+
+            Vector3 moveTo = new Vector3(currentMove.getX(), currentMove.getY(), transform.position.z);
+
+            transform.position = Vector3.MoveTowards(transform.position, moveTo, 4.5f * Time.deltaTime);
         } else if (!Physics2D.OverlapCircle(transform.position, .5f, playerLayer) && !landed)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 4.5f * Time.deltaTime);
@@ -50,12 +76,18 @@ public class companionMovement : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
+            
             waypoint = Input.mousePosition;
+
+            /*
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
             waypoint = worldPosition;
             following = false;
             landed = false;
             rb.gravityScale = 0f;
+            */
+
+            AStarFind(waypoint);
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
@@ -133,7 +165,7 @@ public class companionMovement : MonoBehaviour
                 currentNeighbor = moveGrid.getNeighbor(current, i);
 
                 foreach (GridBlocks closed in closedList.list) {
-                    if (currentNeighbor.row == closed.row && currentNeighbor.column == closed.column) {
+                    if (currentNeighbor.row == closed.row && currentNeighbor.column == closed.column || currentNeighbor.obstacle == true) {
                         flag = true;
                     }
 
@@ -173,4 +205,43 @@ public class companionMovement : MonoBehaviour
 			current = current.getParent();
         }
     }
+
+    void populateGrid (int blockSize) {
+		float startingX = gridLength / 2 * -1;
+		float startingY = gridWidth / 2 * -1; 
+		int arrayIt = 0;
+        gridBlocks = new GridBlocks[gridLength * gridWidth];
+
+		for (int i = 0; i < gridRow; i++) {
+			for (int j = 0; j < gridColumn; j++) {
+				int currentX = (int) startingX + (blockSize * j);
+				int currentY = (int) startingY + (blockSize * i);
+                float saveX = startingX + (blockSize * j);
+                float saveY = startingY + (blockSize * i);
+
+                Vector2 findOtherObjects = new Vector2(currentX, currentY);
+
+                Collider2D test = Physics2D.OverlapCircle(findOtherObjects, 0.5f);
+
+                if (test != null) {
+
+				    if (test.gameObject.tag == "Companion Avoid") {
+					    GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
+
+					    gridBlocks[arrayIt] = input;
+
+					    arrayIt++;
+				    }
+
+				    else {
+					    GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
+
+					    gridBlocks[arrayIt] = input;
+
+					    arrayIt++;
+				    }
+                }
+			}
+		}
+	}
 }
