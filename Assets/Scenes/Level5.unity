@@ -5932,8 +5932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fce13527c4e1b24d94774a177735ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 28
-  height: 11
+  length: 14
+  height: 18
 --- !u!4 &1205765306
 Transform:
   m_ObjectHideFlags: 0
@@ -9335,7 +9335,6 @@ GameObject:
   - component: {fileID: 2030156758}
   - component: {fileID: 2030156757}
   - component: {fileID: 2030156756}
-  - component: {fileID: 2030156761}
   m_Layer: 0
   m_Name: Companion
   m_TagString: Companion
@@ -9506,19 +9505,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2030156761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030156755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b8df62d8b47088449b47b3d7461e5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsCollected: 0
 --- !u!1 &2103165909
 GameObject:
   m_ObjectHideFlags: 0
