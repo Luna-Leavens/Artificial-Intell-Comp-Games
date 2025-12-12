@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCheck: {fileID: 142833659}
   resetCheck: {fileID: 261733195}
-  movePos: {x: 3.5, y: -10.5, z: 0}
+  movePos: {x: 3.5, y: -25.5, z: 0}
 --- !u!4 &32036435
 Transform:
   m_ObjectHideFlags: 0
@@ -6348,8 +6348,8 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 639316219}
   rb: {fileID: 1180269699}
-  gridLength: 18
-  gridWidth: 31
+  gridLength: 100
+  gridWidth: 100
   useGrid: {fileID: 472137988}
   tiles: {fileID: 1484227354}
 --- !u!61 &1180269698
@@ -11741,7 +11741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCheck: {fileID: 142833659}
   resetCheck: {fileID: 261733195}
-  movePos: {x: 9.5, y: -10.5, z: 0}
+  movePos: {x: 9.5, y: -25.5, z: 0}
 --- !u!4 &1696434113
 Transform:
   m_ObjectHideFlags: 0
