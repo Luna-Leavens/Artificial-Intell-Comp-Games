@@ -32,6 +32,7 @@ public class companionMovement : MonoBehaviour
     private GridBlocks[] gridBlocks;
 	private int gridRow;
 	private int gridColumn;
+    private Vector3 prevPos;
 
     void Start()
     {
@@ -90,14 +91,14 @@ public class companionMovement : MonoBehaviour
             landed = !landed;
             if (landed)
             {
+                prevPos = new Vector3(transform.position.x, transform.position.y);
+                
                 rb.gravityScale = 1f;
             }
 
             else
             {
-                Vector3 goals = new Vector3(goalBlock.getX(), goalBlock.getY());
-
-                transform.position = goals;
+                transform.position = prevPos;
 
                 rb.gravityScale = 0f;
             }
