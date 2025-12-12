@@ -4087,7 +4087,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 97fe3325245a79f4eab201fa128d5c4f, type: 3}
   m_Resource: {fileID: 8300000, guid: 97fe3325245a79f4eab201fa128d5c4f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6323,7 +6323,6 @@ GameObject:
   - component: {fileID: 1180269699}
   - component: {fileID: 1180269698}
   - component: {fileID: 1180269697}
-  - component: {fileID: 1180269696}
   m_Layer: 0
   m_Name: Companion
   m_TagString: Companion
@@ -6331,20 +6330,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1180269696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180269695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b8df62d8b47088449b47b3d7461e5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsCollected: 0
-  coinSound: {fileID: 0}
 --- !u!114 &1180269697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6363,10 +6348,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 639316219}
   rb: {fileID: 1180269699}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 18
+  gridWidth: 31
+  useGrid: {fileID: 472137988}
+  tiles: {fileID: 1484227354}
 --- !u!61 &1180269698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7310,7 +7295,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a880cb69909a3b14e9165e553faaccea, type: 3}
   m_Resource: {fileID: 8300000, guid: a880cb69909a3b14e9165e553faaccea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
