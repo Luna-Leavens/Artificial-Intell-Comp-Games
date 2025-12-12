@@ -80,7 +80,7 @@ public class List
     public void sort()
     {
         int largest = 0;
-        int smallest = 0;
+        int smallest = 10000000;
 
         for (int j = 0; j < i; j++)
         {
@@ -95,7 +95,7 @@ public class List
             }
         }
 
-        while(largest != list[0].getF() && smallest != list[i-1].getF())
+        while(largest != list[0].getF() || smallest != list[i-1].getF())
         {
             for (int j = 0; j < i - 1; j++)
             {

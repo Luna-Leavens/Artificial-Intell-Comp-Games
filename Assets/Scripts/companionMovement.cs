@@ -62,7 +62,7 @@ public class companionMovement : MonoBehaviour
                 return;
             }
 
-            GridBlocks currentMove = movementList.pop();
+            GridBlocks currentMove = movementList.removeStart();
 
             Vector3 moveTo = new Vector3(currentMove.getX(), currentMove.getY(), transform.position.z);
 
@@ -122,11 +122,13 @@ public class companionMovement : MonoBehaviour
 
     private void SetGoalBlock(Vector2 goal) {
         foreach (GridBlocks goalFind in gridBlocks) {
-            float compareX = goalFind.getX() / goal.x;
-            float compareY = goalFind.getY() / goal.y;
+            float compareX = Mathf.Abs(goalFind.getX() - goal.x);
+            float compareY = Mathf.Abs(goalFind.getY() - goal.y);
             
-            if ((0.5f < compareX) && (compareX < 1.5f) && (0.5f < compareY) && (compareY < 1.5f)) {
+            if ((0.0f <= compareX) && (compareX <= 0.5f) && (0.0f <= compareY) && (compareY <= 0.5f)) {
                 goalBlock = goalFind;
+
+                break;
             }
         }
     }
@@ -161,11 +163,15 @@ public class companionMovement : MonoBehaviour
 
         current = openList.pop();
 
-        while (current.row != goalBlock.row && current.column != goalBlock.column) {
+        while (current.getH() != 0) {
             if (checks != 0) {
                 Debug.Log("here");
 
                 current = openList.pop();
+
+                Debug.Log(current.row);
+                Debug.Log(current.column);
+                Debug.Log(current.getF());
             }
 
             if (current.row == goalBlock.row && current.column == goalBlock.column) {
@@ -206,6 +212,8 @@ public class companionMovement : MonoBehaviour
             }
 
             // Sorts OpenList in order from blocks of highest F to lowest F
+
+            Debug.Log(openList.length());
 
             if (openList.length() >= 2) {
                 openList.sort();
