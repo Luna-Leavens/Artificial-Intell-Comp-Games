@@ -14,7 +14,7 @@ public class List
 
     // Adds block to the start of the list
     public void push(GridBlocks current)
-    {
+    {    
         if (i == 0)
         {
             list[i] = current;

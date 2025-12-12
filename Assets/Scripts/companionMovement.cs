@@ -4,6 +4,7 @@ using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -54,6 +55,16 @@ public class companionMovement : MonoBehaviour
 		if (gridBlocks != null) {
 			moveGrid = new AStarGrid(gridLength, gridWidth, useGrid, gridBlocks);
 		}
+
+        foreach (GridBlocks test in gridBlocks)
+        {
+            if (test.row == 6 && test.column == 8)
+            {
+                Debug.Log(test.obstacle);
+                Debug.Log(test.x);
+                Debug.Log(test.y);
+            }
+        }
     }
     void Update()
     {
@@ -112,6 +123,8 @@ public class companionMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             landed = false;
+            arrived = false;
+            unpathable = false;
             rb.gravityScale = 0f;
             following = true;
         }
@@ -121,7 +134,7 @@ public class companionMovement : MonoBehaviour
         
         for (int i = 0; i < moveGrid.blocks.Length; i++) {
             Vector2 sphereUse = new Vector2(moveGrid.blocks[i].getX(), moveGrid.blocks[i].getY());
-            Vector2 size = new Vector2(0.3f, 0.3f);
+            Vector2 size = new Vector2(0.4f, 0.4f);
 
             Collider2D findStart = Physics2D.OverlapBox(sphereUse, size, 0.0f);
 
@@ -183,6 +196,11 @@ public class companionMovement : MonoBehaviour
                     break;
                 }
 
+                if (closedList.length() == gridLength * gridWidth)
+                {
+                    break;
+                }
+
                 current = openList.pop();
             }
 
@@ -206,6 +224,13 @@ public class companionMovement : MonoBehaviour
                     }
                 }
 
+                for (int j = 0; j < openList.length(); j++)
+                {
+                    if (currentNeighbor.row == openList.list[j].row && currentNeighbor.column == openList.list[j].column) {
+                            flag = true;
+                        }
+                }
+
                 if (currentNeighbor.obstacle == true)
                 {
                     flag = true;
@@ -214,6 +239,8 @@ public class companionMovement : MonoBehaviour
                 if (flag) {
                     continue;
                 }
+
+        
 
                 neighborH = Mathf.Abs(currentNeighbor.row - goalBlock.row) + Mathf.Abs(currentNeighbor.column - goalBlock.column);
                 neighborF = neighborH + g;
@@ -241,7 +268,7 @@ public class companionMovement : MonoBehaviour
         // Traverses parents of the nodes to add them to the list used for moving companion
         
         while (current.getG() != 0) {
-            if (openList.length() == 0)
+            if (openList.length() == 0 || closedList.length() == gridLength * gridWidth)
             {
                 unpathable = true;
                 
@@ -258,22 +285,35 @@ public class companionMovement : MonoBehaviour
 
 		float startingX = tiles.origin.x + 0.5f;
 		float startingY = tiles.origin.y + 0.5f;
+        int otherX = tiles.origin.x;
+        int otherY = tiles.origin.y;
+        Vector3Int findOtherTiles;
 		int arrayIt = 0;
 
 		for (int i = 0; i < gridRow; i++) {
 			for (int j = 0; j < gridColumn; j++) {
                 float saveX = startingX + (blockSize * j);
                 float saveY = startingY + (blockSize * i);
+                int anotherX = otherX + (blockSize * j);
+                int anotherY = otherY + (blockSize * i);
 
                 Vector2 findOtherObjects = new Vector2(saveX, saveY);
-                Vector3Int findOtherTiles = new Vector3Int((int) saveX - 1, (int) saveY - 1, 0);
                 Vector2 size = new Vector2(0.2f, 0.2f);
+                findOtherTiles = new Vector3Int(anotherX, anotherY, 0);
+
+                Debug.Log(tiles.HasTile(new Vector3Int(-3, 1, 0)));
 
                 Collider2D test = Physics2D.OverlapBox(findOtherObjects, size, 0.0f);
 
                 if (test != null) {
 
 				    if (test.gameObject.tag == "Companion Avoid") {
+
+                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
+                        {
+                            Debug.Log("Where");
+                        }    
+
 					    GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
 
 					    gridBlocks[arrayIt] = input;
@@ -282,6 +322,12 @@ public class companionMovement : MonoBehaviour
 				    }
 
 				    else {
+
+                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
+                        {
+                            Debug.Log("Where");
+                        }    
+
 					    GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
 
 					    gridBlocks[arrayIt] = input;
@@ -293,16 +339,25 @@ public class companionMovement : MonoBehaviour
                 else {
                     if (tiles.HasTile(findOtherTiles))
                     {
-                        Debug.Log("Testing");
 
-                        GridBlocks others = new GridBlocks(saveX, saveY, true, i, j);
+                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
+                        {
+                            Debug.Log("Where");
+                        }
 
-					    gridBlocks[arrayIt] = others;
+                        GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
+
+					    gridBlocks[arrayIt] = input;
 
 					    arrayIt++;
                     }
 
                     else {
+
+                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
+                        {
+                            Debug.Log("Where");
+                        }
 
                         GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
 
