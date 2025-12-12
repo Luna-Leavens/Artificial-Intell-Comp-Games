@@ -76,7 +76,7 @@ public class AStarGrid
             case 0:  // Up
                 if (block.row >= 0 && block.row < width / gridSize) {
                 foreach (GridBlocks neighbor in blocks) {
-                    if (neighbor.row == block.row + 1 && neighbor.column == block.column && !neighbor.obstacle) {
+                    if (neighbor.row == block.row + 1 && neighbor.column == block.column) {
                         return neighbor;
                     }
                 }
@@ -87,7 +87,7 @@ public class AStarGrid
             case 1:  // Left
                 if (block.column >= 0 && block.column < length / gridSize) {
                 foreach (GridBlocks neighbor in blocks) {
-                    if (neighbor.row == block.row && neighbor.column == block.column - 1 && !neighbor.obstacle) {
+                    if (neighbor.row == block.row && neighbor.column == block.column - 1) {
                         return neighbor;
                     }
                 }
@@ -98,7 +98,7 @@ public class AStarGrid
             case 2:  // Down
                 if (block.row >= 0 && block.row < width / gridSize) {
                 foreach (GridBlocks neighbor in blocks) {
-                    if (neighbor.row == block.row - 1 && neighbor.column == block.column && !neighbor.obstacle) {
+                    if (neighbor.row == block.row - 1 && neighbor.column == block.column) {
                         return neighbor;
                     }
                 }
@@ -109,7 +109,7 @@ public class AStarGrid
             case 3:  // Right
                 if (block.column >= 0 && block.column < length / gridSize) {
                 foreach (GridBlocks neighbor in blocks) {
-                    if (neighbor.row == block.row && neighbor.column == block.column + 1 && !neighbor.obstacle) {
+                    if (neighbor.row == block.row && neighbor.column == block.column + 1) {
                         return neighbor;
                     }
                 }

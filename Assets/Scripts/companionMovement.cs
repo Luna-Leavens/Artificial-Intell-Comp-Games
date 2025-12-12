@@ -205,7 +205,6 @@ public class companionMovement : MonoBehaviour
                 openList.push(currentNeighbor);
             }
 
-
             // Sorts OpenList in order from blocks of highest F to lowest F
 
             if (openList.length() >= 2) {
@@ -222,13 +221,9 @@ public class companionMovement : MonoBehaviour
         }
 
         // Traverses parents of the nodes to add them to the list used for moving companion
-
-        Debug.Log(openList.length());
         
         while (current.getG() != 0) {
             movementList.push(current);
-
-            Debug.Log(current.getG());
 
 			current = current.getParent();
         }
