@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 225464011}
   m_Layer: 6
   m_Name: redBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 293910744}
   m_Layer: 6
   m_Name: blueBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 822225957}
   m_Layer: 6
   m_Name: redBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3628,7 +3628,7 @@ GameObject:
   - component: {fileID: 933878781}
   m_Layer: 6
   m_Name: redBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3882,7 +3882,7 @@ GameObject:
   - component: {fileID: 950056377}
   m_Layer: 6
   m_Name: redBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4034,7 +4034,7 @@ GameObject:
   - component: {fileID: 953768370}
   m_Layer: 6
   m_Name: redBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4287,7 +4287,7 @@ GameObject:
   - component: {fileID: 965084584}
   m_Layer: 6
   m_Name: redBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5694,7 +5694,7 @@ GameObject:
   - component: {fileID: 1396663929}
   m_Layer: 6
   m_Name: blueBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8982,7 +8982,7 @@ GameObject:
   - component: {fileID: 1790698740}
   m_Layer: 6
   m_Name: blueBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9337,10 +9337,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 1752719442}
   rb: {fileID: 2030156758}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 33
+  gridWidth: 16
+  useGrid: {fileID: 282219246}
+  tiles: {fileID: 1557283007}
 --- !u!61 &2030156757
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 42765067}
   m_Layer: 6
   m_Name: redBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,10 +502,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 187579353}
   rb: {fileID: 146544580}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 38
+  gridWidth: 16
+  useGrid: {fileID: 2147156028}
+  tiles: {fileID: 775644297}
 --- !u!50 &146544580
 Rigidbody2D:
   serializedVersion: 5
@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 275140613}
   m_Layer: 6
   m_Name: redBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1746,7 +1746,7 @@ GameObject:
   - component: {fileID: 281145965}
   m_Layer: 6
   m_Name: redBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2710,7 +2710,7 @@ GameObject:
   - component: {fileID: 610952842}
   m_Layer: 6
   m_Name: redBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5202,7 +5202,7 @@ GameObject:
   - component: {fileID: 971885479}
   m_Layer: 6
   m_Name: blueBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6052,7 +6052,7 @@ GameObject:
   - component: {fileID: 1175988790}
   m_Layer: 6
   m_Name: blueBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7694,7 +7694,7 @@ GameObject:
   - component: {fileID: 1644286334}
   m_Layer: 6
   m_Name: redBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8841,7 +8841,7 @@ GameObject:
   - component: {fileID: 1883404627}
   m_Layer: 6
   m_Name: blueBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9157,7 +9157,7 @@ GameObject:
   - component: {fileID: 1930247089}
   m_Layer: 6
   m_Name: redBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9559,10 +9559,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 1752719442}
   rb: {fileID: 2030156758}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 33
+  gridWidth: 23
+  useGrid: {fileID: 282219246}
+  tiles: {fileID: 1557283007}
 --- !u!61 &2030156757
 BoxCollider2D:
   m_ObjectHideFlags: 0

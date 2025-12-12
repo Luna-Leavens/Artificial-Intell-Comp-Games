@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 133226432}
   m_Layer: 6
   m_Name: redBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 280627809}
   m_Layer: 6
   m_Name: blueBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1460,7 +1460,7 @@ GameObject:
   - component: {fileID: 502121833}
   m_Layer: 6
   m_Name: redBlock (5)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 861132666}
   m_Layer: 6
   m_Name: redBlock (4)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 1205394922}
   m_Layer: 6
   m_Name: redBlock (3)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4144,7 +4144,7 @@ GameObject:
   - component: {fileID: 1307188409}
   m_Layer: 0
   m_Name: lockedDoor_0
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4572,7 +4572,7 @@ GameObject:
   - component: {fileID: 1493179702}
   m_Layer: 6
   m_Name: redBlock
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6628,7 +6628,7 @@ GameObject:
   - component: {fileID: 1645842724}
   m_Layer: 6
   m_Name: blueBlock (2)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7341,7 +7341,7 @@ GameObject:
   - component: {fileID: 1843606409}
   m_Layer: 6
   m_Name: blueBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7718,7 +7718,7 @@ GameObject:
   - component: {fileID: 1950737627}
   m_Layer: 6
   m_Name: redBlock (1)
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7929,10 +7929,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 1752719442}
   rb: {fileID: 2030156758}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 35
+  gridWidth: 15
+  useGrid: {fileID: 282219246}
+  tiles: {fileID: 1557283007}
 --- !u!61 &2030156757
 BoxCollider2D:
   m_ObjectHideFlags: 0

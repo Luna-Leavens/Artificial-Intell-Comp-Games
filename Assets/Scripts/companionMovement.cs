@@ -42,6 +42,9 @@ public class companionMovement : MonoBehaviour
         Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), playerCol, true);
         movementList = new List();
 
+        Debug.Log(tiles.size.x);
+        Debug.Log(tiles.size.y);
+
         // Populates Grid Once
 
         int blockSize = (int) useGrid.cellSize.x;
@@ -55,16 +58,6 @@ public class companionMovement : MonoBehaviour
 		if (gridBlocks != null) {
 			moveGrid = new AStarGrid(gridLength, gridWidth, useGrid, gridBlocks);
 		}
-
-        foreach (GridBlocks test in gridBlocks)
-        {
-            if (test.row == 6 && test.column == 8)
-            {
-                Debug.Log(test.obstacle);
-                Debug.Log(test.x);
-                Debug.Log(test.y);
-            }
-        }
     }
     void Update()
     {
@@ -99,8 +92,16 @@ public class companionMovement : MonoBehaviour
             {
                 rb.gravityScale = 1f;
             }
+
             else
             {
+                Vector3 goals = new Vector3(goalBlock.getX(), goalBlock.getY());
+
+                while (transform.position != goals)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, goals, Time.deltaTime / 100);
+                }
+
                 rb.gravityScale = 0f;
             }
         }
@@ -301,19 +302,11 @@ public class companionMovement : MonoBehaviour
                 Vector2 size = new Vector2(0.2f, 0.2f);
                 findOtherTiles = new Vector3Int(anotherX, anotherY, 0);
 
-                Debug.Log(tiles.HasTile(new Vector3Int(-3, 1, 0)));
-
                 Collider2D test = Physics2D.OverlapBox(findOtherObjects, size, 0.0f);
 
                 if (test != null) {
 
 				    if (test.gameObject.tag == "Companion Avoid") {
-
-                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
-                        {
-                            Debug.Log("Where");
-                        }    
-
 					    GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
 
 					    gridBlocks[arrayIt] = input;
@@ -321,13 +314,15 @@ public class companionMovement : MonoBehaviour
 					    arrayIt++;
 				    }
 
-				    else {
+                    else if (tiles.HasTile(findOtherTiles)){
+                        GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
 
-                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
-                        {
-                            Debug.Log("Where");
-                        }    
+					    gridBlocks[arrayIt] = input;
 
+					    arrayIt++;
+                    }
+
+				    else {    
 					    GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
 
 					    gridBlocks[arrayIt] = input;
@@ -339,12 +334,6 @@ public class companionMovement : MonoBehaviour
                 else {
                     if (tiles.HasTile(findOtherTiles))
                     {
-
-                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
-                        {
-                            Debug.Log("Where");
-                        }
-
                         GridBlocks input = new GridBlocks(saveX, saveY, true, i, j);
 
 					    gridBlocks[arrayIt] = input;
@@ -353,12 +342,6 @@ public class companionMovement : MonoBehaviour
                     }
 
                     else {
-
-                        if (findOtherTiles.x == -3 && findOtherTiles.y == 1)
-                        {
-                            Debug.Log("Where");
-                        }
-
                         GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
 
 					    gridBlocks[arrayIt] = input;

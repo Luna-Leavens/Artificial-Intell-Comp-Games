@@ -9304,7 +9304,7 @@ GameObject:
   - component: {fileID: 987467619}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Untagged
+  m_TagString: Companion Avoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19847,10 +19847,10 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 1752719442}
   rb: {fileID: 2030156758}
-  gridLength: 0
-  gridWidth: 0
-  useGrid: {fileID: 0}
-  tiles: {fileID: 0}
+  gridLength: 32
+  gridWidth: 15
+  useGrid: {fileID: 282219246}
+  tiles: {fileID: 1557283007}
 --- !u!61 &2030156757
 BoxCollider2D:
   m_ObjectHideFlags: 0
