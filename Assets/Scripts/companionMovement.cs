@@ -97,10 +97,7 @@ public class companionMovement : MonoBehaviour
             {
                 Vector3 goals = new Vector3(goalBlock.getX(), goalBlock.getY());
 
-                while (transform.position != goals)
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, goals, Time.deltaTime / 100);
-                }
+                transform.position = goals;
 
                 rb.gravityScale = 0f;
             }
