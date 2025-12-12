@@ -4,6 +4,7 @@ public class coinCollect : MonoBehaviour
 {
     private GameObject currentInteractionObject;
     [SerializeField] public int coinsCollected;
+    [SerializeField] private AudioSource coinSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +25,7 @@ public class coinCollect : MonoBehaviour
             Destroy(currentInteractionObject);
             currentInteractionObject = null;
             coinsCollected++;
+            coinSound.Play();
         }
     }
 }

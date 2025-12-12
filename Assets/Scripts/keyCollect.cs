@@ -4,6 +4,7 @@ public class keyCollect : MonoBehaviour
 {
     private GameObject currentInteractionObject;
     [SerializeField] public int keysCollected;
+    [SerializeField] private AudioSource coinSound;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +14,7 @@ public class keyCollect : MonoBehaviour
             Destroy(currentInteractionObject);
             currentInteractionObject = null;
             keysCollected++;
+            coinSound.Play();
         }
     }
 }

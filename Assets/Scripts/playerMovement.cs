@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private BoxCollider2D companionCol;
+    [SerializeField] private AudioSource jumpSound;
     private bool doubleJump;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,9 +28,11 @@ public class playerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded()) {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
             doubleJump = true;
+            jumpSound.Play();
         }else if (Input.GetButtonDown("Jump") && !isGrounded() && doubleJump) {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
             doubleJump = false;
+            jumpSound.Play();
         }
 
         Flip();
