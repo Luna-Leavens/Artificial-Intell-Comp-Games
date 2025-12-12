@@ -57,6 +57,11 @@ public class companionMovement : MonoBehaviour
         {
             // transform.position = Vector3.MoveTowards(transform.position, waypoint, 4.5f * Time.deltaTime);
 
+            if (movementList.length() == 0)
+            {
+                return;
+            }
+
             GridBlocks currentMove = movementList.pop();
 
             Vector3 moveTo = new Vector3(currentMove.getX(), currentMove.getY(), transform.position.z);
@@ -84,14 +89,9 @@ public class companionMovement : MonoBehaviour
             waypoint = Input.mousePosition;
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
             waypoint = worldPosition;
-
-            /*
-            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
-            waypoint = worldPosition;
             following = false;
             landed = false;
             rb.gravityScale = 0f;
-            */
 
             AStarFind(waypoint);
         }
@@ -139,6 +139,8 @@ public class companionMovement : MonoBehaviour
         GridBlocks parentSet;
         GridBlocks currentNeighbor;
 
+        int checks = 0;
+
         openList = new List();
         closedList = new List();
 
@@ -159,11 +161,10 @@ public class companionMovement : MonoBehaviour
 
         current = openList.pop();
 
-        Debug.Log(current.row);
-        Debug.Log(current.column);
-
         while (current.row != goalBlock.row && current.column != goalBlock.column) {
-            if (current != startingBlock) {
+            if (checks != 0) {
+                Debug.Log("here");
+
                 current = openList.pop();
             }
 
@@ -178,46 +179,56 @@ public class companionMovement : MonoBehaviour
 
                 currentNeighbor = moveGrid.getNeighbor(current, i);
 
-                Debug.Log(currentNeighbor.row);
-                Debug.Log(currentNeighbor.column);
+                if (closedList.length() != 0) {
 
-                foreach (GridBlocks closed in closedList.list) {
-                    if (currentNeighbor.row == closed.row && currentNeighbor.column == closed.column || currentNeighbor.obstacle == true) {
-                        flag = true;
+                    for (int j = 0; j < closedList.length(); j++) {
+                        if (currentNeighbor.row == closedList.list[j].row && currentNeighbor.column == closedList.list[j].column) {
+                            flag = true;
+                        }
                     }
-
-                    if (flag) {
-                        continue;
-                    }
-
-                    neighborH = Mathf.Abs(currentNeighbor.row - goalBlock.row) + Mathf.Abs(currentNeighbor.column - goalBlock.column);
-                    neighborF = neighborH + g;
-
-                    currentNeighbor.setManhatten(neighborF, g, neighborH, current);
-
-                    openList.push(currentNeighbor);
                 }
+
+                if (currentNeighbor.obstacle == true)
+                {
+                    flag = true;
+                }
+
+                if (flag) {
+                    continue;
+                }
+
+                neighborH = Mathf.Abs(currentNeighbor.row - goalBlock.row) + Mathf.Abs(currentNeighbor.column - goalBlock.column);
+                neighborF = neighborH + g;
+
+                currentNeighbor.setManhatten(neighborF, g, neighborH, current);
+
+                openList.push(currentNeighbor);
             }
+
 
             // Sorts OpenList in order from blocks of highest F to lowest F
 
-            while (openList.list[0].getF() < openList.list[1].getF() && openList.list[openList.length() - 1].getF() > openList.list[openList.length() - 2].getF()) {
-				foreach (GridBlocks swapping in openList.list) {
-                	openList.swap(swapping);
-            	}
-			}
+            if (openList.length() >= 2) {
+                openList.sort();
+            }
 
             // Pushes the current block to the closed list and updates G value;
 
             closedList.push(current);
 
-			g = g + current.getG();
+			g++;
+
+            checks++;
         }
 
         // Traverses parents of the nodes to add them to the list used for moving companion
 
+        Debug.Log(openList.length());
+        
         while (current.getG() != 0) {
             movementList.push(current);
+
+            Debug.Log(current.getG());
 
 			current = current.getParent();
         }
@@ -235,6 +246,7 @@ public class companionMovement : MonoBehaviour
                 float saveY = startingY + (blockSize * i);
 
                 Vector2 findOtherObjects = new Vector2(saveX, saveY);
+                Vector3Int findOtherTiles = new Vector3Int((int) saveX - 1, (int) saveY - 1, 0);
                 Vector2 size = new Vector2(0.2f, 0.2f);
 
                 Collider2D test = Physics2D.OverlapBox(findOtherObjects, size, 0.0f);
@@ -259,13 +271,28 @@ public class companionMovement : MonoBehaviour
                 }
 
                 else {
-                    GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
+                    if (tiles.HasTile(findOtherTiles))
+                    {
+                        Debug.Log("Testing");
+
+                        GridBlocks others = new GridBlocks(saveX, saveY, true, i, j);
+
+					    gridBlocks[arrayIt] = others;
+
+					    arrayIt++;
+                    }
+
+                    else {
+
+                        GridBlocks input = new GridBlocks(saveX, saveY, false, i, j);
 
 					    gridBlocks[arrayIt] = input;
 
 					    arrayIt++;
+                    }
                 }
 			}
-		}
-	}
+        }
+    }
 }
+

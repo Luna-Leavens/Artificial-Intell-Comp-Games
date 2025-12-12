@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 public class List
 {
@@ -20,15 +21,16 @@ public class List
 
             i++;
         }
+
         else
         {
             int moveI = i;
             
             while (moveI != 0)
             {
-                GridBlocks move = list[moveI];
+                GridBlocks move = list[moveI-1];
 
-                list[moveI+1] = move;
+                list[moveI] = move;
 
                 moveI--;
             }
@@ -74,38 +76,38 @@ public class List
         return removed;
     }
 
-    // Swaps block with lower f in the list with block with higher f in the list
-    public void swap(GridBlocks swap)
+    // Sorts blocks in order from lowest to highest f
+    public void sort()
     {
-        int j = 1;
+        int largest = 0;
+        int smallest = 0;
 
-        foreach (GridBlocks potential in list)
-        {   
-            if (potential == swap)
+        for (int j = 0; j < i; j++)
+        {
+            if (largest < list[j].getF())
             {
-                if (j == 1)
-                {
-                    break;
-                }
-
-                if (list[j] == null)
-                {
-                    break;
-                }
-
-                if (potential.getF() < list[j].getF())
-                {
-                    GridBlocks save = list[j];
-
-                    list[j] = potential;
-
-                    list[j-1] = save;
-
-                    break;
-                }
+                largest = list[j].getF();
             }
 
-            j++;
+            if (smallest > list[j].getF())
+            {
+                smallest = list[j].getF();
+            }
+        }
+
+        while(largest != list[0].getF() && smallest != list[i-1].getF())
+        {
+            for (int j = 0; j < i - 1; j++)
+            {
+                if (list[j].getF() < list[j+1].getF())
+                {
+                    GridBlocks save = list[j+1];
+
+                    list[j+1] = list[j];
+
+                    list[j] = save;
+                }
+            }
         }
     }
 }
