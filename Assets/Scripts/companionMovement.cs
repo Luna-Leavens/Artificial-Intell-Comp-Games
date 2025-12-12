@@ -20,6 +20,8 @@ public class companionMovement : MonoBehaviour
     [SerializeField] private Tilemap tiles;
     private bool landed;
     private bool following;
+    private bool arrived;
+    private bool unpathable;
     private AStarGrid moveGrid;
     private List openList;
     private List closedList;
@@ -34,6 +36,8 @@ public class companionMovement : MonoBehaviour
     {
         following = true;
         landed = false;
+        arrived = false;
+        unpathable = false;
         Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), playerCol, true);
         movementList = new List();
 
@@ -53,12 +57,12 @@ public class companionMovement : MonoBehaviour
     }
     void Update()
     {
-        if (!following && !landed)
+        if (!following && !landed && !arrived && !unpathable)
         {
-            // transform.position = Vector3.MoveTowards(transform.position, waypoint, 4.5f * Time.deltaTime);
-
             if (movementList.length() == 0)
             {
+                arrived = true;
+                
                 return;
             }
 
@@ -66,11 +70,17 @@ public class companionMovement : MonoBehaviour
 
             Vector3 moveTo = new Vector3(currentMove.getX(), currentMove.getY(), transform.position.z);
 
-            transform.position = Vector3.MoveTowards(transform.position, moveTo, 4.5f * Time.deltaTime);
-        } else if (!Physics2D.OverlapCircle(transform.position, .5f, playerLayer) && !landed)
+            while (transform.position != moveTo)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, moveTo, 4.5f * Time.deltaTime);
+            }
+        } 
+        
+        else if (!Physics2D.OverlapCircle(transform.position, .5f, playerLayer) && !landed && !arrived)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 4.5f * Time.deltaTime);
         }
+
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             landed = !landed;
@@ -83,9 +93,12 @@ public class companionMovement : MonoBehaviour
                 rb.gravityScale = 0f;
             }
         }
+
         if (Input.GetMouseButtonDown(0))
         {
-            
+            arrived = false;
+            unpathable = false;
+
             waypoint = Input.mousePosition;
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(waypoint);
             waypoint = worldPosition;
@@ -95,13 +108,13 @@ public class companionMovement : MonoBehaviour
 
             AStarFind(waypoint);
         }
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             landed = false;
             rb.gravityScale = 0f;
             following = true;
         }
-
     }
 
     private void SetStartBlock() {
@@ -165,13 +178,12 @@ public class companionMovement : MonoBehaviour
 
         while (current.getH() != 0) {
             if (checks != 0) {
-                Debug.Log("here");
+                if (openList.length() == 0)
+                {
+                    break;
+                }
 
                 current = openList.pop();
-
-                Debug.Log(current.row);
-                Debug.Log(current.column);
-                Debug.Log(current.getF());
             }
 
             if (current.row == goalBlock.row && current.column == goalBlock.column) {
@@ -213,8 +225,6 @@ public class companionMovement : MonoBehaviour
 
             // Sorts OpenList in order from blocks of highest F to lowest F
 
-            Debug.Log(openList.length());
-
             if (openList.length() >= 2) {
                 openList.sort();
             }
@@ -231,6 +241,13 @@ public class companionMovement : MonoBehaviour
         // Traverses parents of the nodes to add them to the list used for moving companion
         
         while (current.getG() != 0) {
+            if (openList.length() == 0)
+            {
+                unpathable = true;
+                
+                break;
+            }
+
             movementList.push(current);
 
 			current = current.getParent();
