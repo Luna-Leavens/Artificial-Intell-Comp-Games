@@ -72,7 +72,7 @@ public class companionMovement : MonoBehaviour
 
             while (transform.position != moveTo)
             {
-                transform.position = Vector3.MoveTowards(transform.position, moveTo, 4.5f * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, moveTo, 0.000001f);
             }
         } 
         
