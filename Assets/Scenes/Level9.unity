@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 89327045}
   - component: {fileID: 89327042}
   - component: {fileID: 89327044}
-  - component: {fileID: 89327043}
   m_Layer: 0
   m_Name: Companion
   m_TagString: Companion
@@ -186,20 +185,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7, y: 0.6875}
   m_EdgeRadius: 0
---- !u!114 &89327043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89327041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b8df62d8b47088449b47b3d7461e5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsCollected: 0
-  coinSound: {fileID: 0}
 --- !u!114 &89327044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,8 +203,8 @@ MonoBehaviour:
     m_Bits: 128
   playerCol: {fileID: 1665363320}
   rb: {fileID: 89327045}
-  gridLength: 33
-  gridWidth: 16
+  gridLength: 50
+  gridWidth: 50
   useGrid: {fileID: 2091117789}
   tiles: {fileID: 1409926517}
 --- !u!50 &89327045
