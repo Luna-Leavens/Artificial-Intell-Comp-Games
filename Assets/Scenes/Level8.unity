@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &25353336
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &182220352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4806,7 +4806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCheck: {fileID: 667488092}
   resetCheck: {fileID: 667488092}
-  movePos: {x: -0.5471644, y: -4.112975, z: 0}
+  movePos: {x: -1.547164, y: -13.11298, z: 0}
 --- !u!4 &724571934
 Transform:
   m_ObjectHideFlags: 0
@@ -5041,7 +5041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &758149461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5520,7 +5520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
-  homePos: {x: -12.5, y: -12.5, z: 0}
+  homePos: {x: -13.5, y: -12.5, z: 0}
   resetPos: {x: 1.5, y: -12.5, z: 0}
 --- !u!61 &836301073
 BoxCollider2D:
@@ -5699,7 +5699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &840180727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5846,7 +5846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
-  homePos: {x: -12.5, y: -4.5, z: 0}
+  homePos: {x: -13.5, y: -4.5, z: 0}
   resetPos: {x: 1.5, y: -4.5, z: 0}
 --- !u!61 &847077813
 BoxCollider2D:
@@ -6214,7 +6214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &897112435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7310,7 +7310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCheck: {fileID: 667488092}
   resetCheck: {fileID: 667488092}
-  movePos: {x: -6.64038, y: -4.121189, z: 0}
+  movePos: {x: -5.64038, y: -13.12119, z: 0}
 --- !u!4 &1040226333
 Transform:
   m_ObjectHideFlags: 0
@@ -7545,7 +7545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &1096073722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7708,7 +7708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &1210935024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8717,7 +8717,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1340004686
 SpriteRenderer:
@@ -9675,7 +9675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &1453510181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10284,7 +10284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &1502922591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11063,8 +11063,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1577370035}
-  - {fileID: 847077816}
   - {fileID: 1894727862}
   - {fileID: 1050683070}
   - {fileID: 969587686}
@@ -11076,6 +11074,8 @@ Transform:
   - {fileID: 1226130537}
   - {fileID: 1557117284}
   - {fileID: 753127733}
+  - {fileID: 847077816}
+  - {fileID: 1577370035}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647946566
@@ -12823,7 +12823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &1973142645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13280,7 +13280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCheck: {fileID: 926287521}
   homePos: {x: 0.5, y: -13.5, z: 0}
-  resetPos: {x: -14.5, y: -13.5, z: 0}
+  resetPos: {x: -13.5, y: -13.5, z: 0}
 --- !u!61 &2091356312
 BoxCollider2D:
   m_ObjectHideFlags: 0
